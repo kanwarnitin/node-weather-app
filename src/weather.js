@@ -10,7 +10,7 @@ const weather = (latitude, longitude, callback) => {
         } else {
             const current = body.current
             callback(undefined, {
-                forecast: current.weather_descriptions[0] + ". Current temperatue is " + current.temperature + " degress with " + current.precip + " percent chances of rain."
+                forecast: current.weather_descriptions[0] + ". Current temperatue is " + current.temperature + " degress with " + current.precip + " percent chances of rain with humidity of " + current.humidity + "percent."
             })
         }
     })
